@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+    <!-- 该文件中所产生的对象，被Spring放入了一个称之为Spring IOC容器的地方-->
+    <!--
+
+    http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+
+    <bean name="student" class="org.andios.antity.Student">
+        <property name="stuNum" value="1"></property>
+        <property name="stuName" value="zs"></property>
+        <property name="stuAge" value="21"></property>
+    </bean>
+    -->
+    <context:component-scan base-package="org.andios.antity"></context:component-scan>
+</beans>
